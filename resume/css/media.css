@@ -1,0 +1,38 @@
+/* Mobile first queries */
+
+/* Larger than mobile */
+
+
+/* Larger than tablet */
+@media (max-width: 840px) {
+
+    header h1 {
+        font-size: 3.2rem;
+    }
+
+    header h4 {
+        font-size: 2.0rem;
+        margin-bottom: 90px;
+    }
+
+    header .btn {
+        margin-bottom: 150px;
+    }
+
+    h2.start-title {
+        margin-bottom: 40px;
+    }
+
+    #quote {
+        padding: 70px 0;
+    }
+}
+
+/* Larger than desktop */
+@media (max-width: 985px) {
+    header .wave {
+        display: none;
+    }
+}
+
+/* Larger than Desktop HD */
