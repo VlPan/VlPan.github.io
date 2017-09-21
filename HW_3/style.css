@@ -1,0 +1,241 @@
+
+#div-container{
+    width: 50%;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 100px;
+    background: black;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+#div-container div:nth-child(odd) {
+    color: greenyellow;
+}
+
+
+#div-container div:nth-child(even) {
+    color: violet;
+}
+
+#div-container div:nth-child(2n + 6) {
+    text-decoration: underline;
+}
+
+#div-container div:nth-child(n + 5) {
+    text-transform: uppercase;
+}
+
+/* TRICKY PART */
+
+div ~ div{
+    font-size: .9em;
+}
+
+div ~ div ~ div{
+    font-size: .8em;
+}
+
+div ~ div ~ div ~ div{
+    font-size: .7em;
+}
+
+div + div + div + div + div{
+    font-size: .6em;
+}
+
+div + div + div + div + div{
+    font-size: .5em;
+}
+
+div + div + div + div + div + div{
+    font-size: .4em;
+}
+
+
+div + div + div + div + div + div + div{
+    font-size: .3em;
+}
+
+div + div + div + div + div + div + div + div{
+    font-size: .2em;
+}
+
+div + div + div + div + div + div + div + div + div{
+    font-size: .1em;
+}
+
+div + div + div + div + div + div + div + div + div + div{
+    font-size: .05em;
+}
+
+
+
+
+/* ANOTHER BEAUTIFUL PART */
+
+
+html{
+    text-align: center;
+}
+
+#plus, #minus {
+    margin-top: 20px;
+    font-size:40px;
+    padding: 10px;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+
+.left-blind, .right-blind{
+    position: fixed;
+    background-color: black;
+    z-index: 1000;
+    width: 51%;
+    min-height: 100%;
+    top:0;
+    /*animation: push .4s;*/
+    /*animation-delay: 2.2s;*/
+
+}
+.right-blind{
+    right: 0;
+}
+
+.loaded .left-blind, .loaded .right-blind {
+    -webkit-animation: push .4s;
+    animation: push .4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.round1, .round1:before, .round1:after{
+    border: 3px solid transparent;
+    border-radius: 50%;
+
+}
+
+.cycle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.loaded .cycle{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.round1{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    border-top-color: #bac900;
+    -webkit-animation: spin .9s infinite linear;
+    animation: spin .9s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.round1:before, .round1:after{
+    content: '';
+    position: absolute;
+}
+
+.round1:before{
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: #00abd4;
+    -webkit-animation: spin 1.3s infinite linear;
+    animation: spin 1.3s infinite linear;
+}
+
+.round1:after{
+    top: 43px;
+    left: 43px;
+    right: 43px;
+    bottom: 43px;
+    border-top-color: #ff1400;
+    -webkit-animation: spin .4s infinite linear;
+    animation: spin .4s infinite linear;
+}
+
+
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+    }
+}
+
+
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+    }
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes push {
+    from {
+        width: 51%;
+    }
+    to{
+        width: 0;
+        background-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes push {
+    from {
+        width: 51%;
+    }
+    to{
+        width: 0;
+        background-color: transparent;
+    }
+}
