@@ -1,0 +1,79 @@
+#celebration_alert{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #eee;
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    padding: 20px 15px;
+    overflow: hidden;
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 16px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color:  #ddd;
+    
+}
+
+td{
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.title{
+    color: darkgray;
+    margin-bottom: 7px;
+    font-size: .9em;
+}
+
+.possible_error{
+    
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: .9em;
+    
+    color: red;
+    
+}
+
+.error_alert{
+    border-bottom: 2px solid red;
+}
+
+input{
+    background-color: #eee;
+    border: none;
+    padding: 2px 5px 2px 0;
+    font-size: 16px;
+}
+
+input[type="date"]{
+    width: 90%;
+}
+
+input[type="time"]{
+    width: 95%;
+}
+
+.fa-check-circle-o{
+    float: right;
+    font-size: 50px;
+    color: #63d829;
+    position: relative;
+}
+
+.fa-check-circle-o:after{
+    content: 'Good';
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    top: 53px;
+    right: 4px;
+}
