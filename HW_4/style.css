@@ -1,8 +1,7 @@
 #celebration_alert{
     width: 300px;
-    margin: 0 auto;
+    margin: 40px auto;
     background-color: #eee;
-    margin-top: 40px;
     border-top: 2px solid #ddd;
     padding: 20px 15px;
     overflow: hidden;
@@ -18,7 +17,6 @@ hr{
     border: none;
     height: 1px;
     background-color:  #ddd;
-    
 }
 
 td{
@@ -33,14 +31,11 @@ td{
 }
 
 .possible_error{
-    
     display: inline-block;
     width: 90%;
     margin-bottom: 20px;
     font-size: .9em;
-    
     color: red;
-    
 }
 
 .error_alert{
