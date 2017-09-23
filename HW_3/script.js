@@ -4,7 +4,7 @@ setTimeout(function () {
 
     var plus = document.getElementById('plus');
     var minus = document.getElementById('minus');
-    var divContainer = document.getElementById('div-container');
+    var divContainer = document.getElementsByClassName('div-container')[0];
 
 
 // now you have a proper float for the font size (yes, it can be a float, not just an integer)

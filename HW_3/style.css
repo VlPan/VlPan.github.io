@@ -1,72 +1,44 @@
 
-#div-container{
+.div-container, .div-container2{
     width: 50%;
     text-align: center;
     margin: 40px auto;
-    font-size: 100px;
+    font-size: 20px;
     background: black;
     padding: 40px;
     border-radius: 5px;
 }
 
-#div-container div:nth-child(odd) {
+
+
+.div-container div:nth-child(odd) {
     color: greenyellow;
 }
 
 
-#div-container div:nth-child(even) {
+.div-container div:nth-child(even) {
     color: violet;
 }
 
-#div-container div:nth-child(2n + 6) {
+.div-container div:nth-child(2n + 6) {
     text-decoration: underline;
 }
 
-#div-container div:nth-child(n + 5) {
+.div-container div:nth-child(n + 5) {
     text-transform: uppercase;
 }
 
 /* TRICKY PART */
 
-div ~ div{
-    font-size: .9em;
+
+
+.div-container2{
+    font-size: 70px;
 }
 
-div ~ div ~ div{
+.div-container2 div {
     font-size: .8em;
-}
-
-div ~ div ~ div ~ div{
-    font-size: .7em;
-}
-
-div + div + div + div + div{
-    font-size: .6em;
-}
-
-div + div + div + div + div{
-    font-size: .5em;
-}
-
-div + div + div + div + div + div{
-    font-size: .4em;
-}
-
-
-div + div + div + div + div + div + div{
-    font-size: .3em;
-}
-
-div + div + div + div + div + div + div + div{
-    font-size: .2em;
-}
-
-div + div + div + div + div + div + div + div + div{
-    font-size: .1em;
-}
-
-div + div + div + div + div + div + div + div + div + div{
-    font-size: .05em;
+    color: white;
 }
 
 
