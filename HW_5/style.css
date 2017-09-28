@@ -1,0 +1,99 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#header{
+    background: url("img/background.png") no-repeat center / cover;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#header .title{
+    font-family: 'Satisfy', cursive;
+    color: rgb(137,152,167);
+     box-shadow:
+    0 0 0 2px hsl(0, 0%, 100%);
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: .95rem 1.7rem;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.button-container{
+    width: 90%;
+    padding: 20px 25px;
+    margin: 5px auto;
+    border: 2px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+
+.wrapper{
+    margin-bottom: 10px;
+}
+
+button{
+    display: inline-block;
+}
+
+.btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 2px rgba(0,0,0, .4);
+}
+
+.white-text{
+    color: white;
+}
+
+.btn-small{
+    font-size: 75%;
+}
+
+.btn-medium{
+    font-size: 100%;
+}
+
+.btn-large{
+    font-size: 156%;
+}
+
+.pink{
+    background-color: #e752aa;
+}
+
+.green{
+    background-color:#aacc40
+}
+
+.blue{
+    background-color:#5198e8
+}
+
+.red{
+    background-color: #ec5a5a
+}
+
+.orange{
+    background-color: #ff823e
+}
+
+.yellow{
+    background-color: #f0bb48
+}
+
+.black-background{
+    background-color: #333333;
+}
+
+
+
+
+
