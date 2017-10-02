@@ -612,6 +612,7 @@ html
     font-size: 1.2em;
     border-radius: 25px;
     color: #7f7d79;
+    margin-bottom: 25px;
     min-width: 40%;
 }
 
@@ -758,7 +759,7 @@ html
 {
     display: inline-block;
 
-    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .hw-feedback__link
