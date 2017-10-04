@@ -7,16 +7,27 @@ html
     box-sizing: border-box;
 }
 
-.hw-container
+.hw-global-container{
+    max-width: 2100px;
+    margin: 0 auto;
+}
+
+.hw-container /* Block Wrapper */
 {
     width: 80%;
     margin-left: 10%;
 }
 
-.hw-container-narrow
+.hw-container-narrow /* Block Wrapper */
 {
     width: 60%;
     margin-left: 20%;
+}
+
+.hw-container-wide /* Block Wrapper */
+{
+    width: 90%;
+    margin-left: 5%;
 }
 
 .hw-header
@@ -41,7 +52,7 @@ html
 .hw-header__header-img
 {
     width: 50%;
-    height: 820px;
+    min-height: 820px;
 
     background: url('../images/5.jpg') center/cover no-repeat;
 }
@@ -49,15 +60,12 @@ html
 .hw-header__header-represent
 {
     width: 50%;
-    height: 820px;
+    min-height: 820px;
 
     background-color: #f1e1d8;
 }
 
-.hw-button-transparent__link{
-    text-decoration: none;
-    color: inherit;
-}
+
 
 .hw-navigation__list
 {
@@ -71,6 +79,7 @@ html
     -ms-flex-wrap: wrap;
 
     flex-wrap: wrap;
+
 }
 
 .hw-navigation__list-item
@@ -144,6 +153,11 @@ html
     color: #90a4ab;
 }
 
+.hw-button-transparent__link{
+    text-decoration: none;
+    color: inherit;
+}
+
 .hw-button-transparent
 {
     font-size: .8em;
@@ -154,9 +168,16 @@ html
     cursor: pointer;
     text-transform: uppercase;
 
-    border: 3px solid black;
+    margin-bottom: 25px;
+    border: 2px solid black;
     border-radius: 15px;
     background-color: transparent;
+}
+
+.hw-about-author{
+    min-height: 320px;
+
+
 }
 
 .hw-about-author__character
@@ -169,6 +190,8 @@ html
 
 .hw-about-author__advantages
 {
+    display: flex;
+    flex: 1;
     width: 50%;
     min-height: 320px;
 }
@@ -178,7 +201,7 @@ html
     font-size: 1.8em;
 
     margin-top: 50px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
 
 .hw-about-author__subtitle
@@ -187,27 +210,33 @@ html
 
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 
     color: #e9ce74;
 }
 
 .hw-about-author__text
 {
-    font-size: .8em;
+    font-size: .9em;
 
-    margin-top: 30px;
-    margin-left: 30px;
+
+    margin-bottom: 30px;
+    /*margin-left: 30px;*/
 
     color: #90a4ab;
+}
+
+.hw-skills{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hw-skills__image
 {
     width: 50%;
-    height: 320px;
+    min-height: 320px;
 
-    background: url('../images/1.jpg') top/cover no-repeat;
+    background: url('../images/1.jpg') center/cover no-repeat;
 }
 
 .hw-skills__skills
@@ -224,7 +253,7 @@ html
     font-weight: 500;
 
     margin-top: 50px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 
     color: white;
 }
@@ -236,7 +265,7 @@ html
 
     margin-top: 30px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 
     color: white;
 }
@@ -296,6 +325,7 @@ html
 
 .hw-advantages__flex-container
 {
+    display: flex;
     width: 50%;
 }
 
@@ -303,6 +333,7 @@ html
 {
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
+
 }
 
 /*.hw-skills__flex-container--reverse{*/
@@ -372,7 +403,7 @@ html
 .hw-experience__img
 {
     width: 50%;
-    height: 385px;
+    min-height: 385px;
 
     background: url('../images/4.jpg') center/cover no-repeat;
 }
@@ -393,7 +424,7 @@ html
 .hw-introduction__title
 {
     font-size: 2em;
-
+    font-weight: 300;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -446,6 +477,10 @@ html
     color: #6d4330;
 }
 
+.hw-experience-list__date--green-black_color{
+    color: #937c30;
+}
+
 .hw-experience-list__desc
 {
     font-size: .9em;
@@ -455,7 +490,7 @@ html
 .hw-education__desc
 {
     width: 50%;
-    height: 445px;
+    min-height: 445px;
 
     background-color: #e4ad59;
 }
@@ -463,14 +498,14 @@ html
 .hw-education__img
 {
     width: 50%;
-    height: 445px;
+    min-height: 445px;
 
     background: url('../images/3.jpg') center no-repeat;
 }
 
 .hw-summary
 {
-    height: 480px;
+    min-height: 480px;
 
     text-align: center;
 
@@ -506,6 +541,9 @@ html
     width: 50%;
 }
 
+.hw-contact__inline{
+    display: inline-block;
+}
 
 
 .hw-contact-form__name,
@@ -523,6 +561,7 @@ html
     border-bottom: 2px solid #e8a95b;
     outline: none;
     background: transparent;
+    font-family: inherit;
 }
 
 .hw-contact-form__name::-webkit-input-placeholder,
@@ -648,7 +687,7 @@ html
 .hw-contact__img
 {
     width: 50%;
-    height: 610px;
+    min-height: 610px;
 
     background: url('../images/2.jpg') center/cover no-repeat;
 }
@@ -674,6 +713,10 @@ html
     margin-bottom: 50px;
 
     color: #7f7d79;
+}
+
+.title-area__inline{
+    display: inline-block;
 }
 
 .hw-connection__title

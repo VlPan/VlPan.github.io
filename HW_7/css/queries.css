@@ -83,15 +83,25 @@
     }
 
     .hw-header__header-represent{
-        height: auto;
+        min-height: auto;
     }
 
     .hw-header__header-img{
-        height: 310px;
+        min-height: 310px;
     }
 
     .hw-experience__img{
         height: 300px;
+    }
+
+    .hw-navigation__list
+    {
+
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 0px;
+
+
     }
 
  /* FONT */
@@ -121,10 +131,13 @@
     .hw-advantages__flex-container {
         width: 100%;
     }
+    .hw-advantages__item{
+        width: 100%;
+    }
 
     .hw-experience__img {
         width: 100%;
-        height: 300px;
+        min-height: 300px;
     }
 
     .hw-experience__desc {
@@ -134,7 +147,7 @@
     .hw-education__img {
         width: 100%;
         display: none;
-        height: 320px;
+        min-height: 320px;
     }
 
     .hw-education__desc {
@@ -151,7 +164,7 @@
 
     .hw-contact__img {
         width: 100%;
-        height: 350px;
+        min-height: 350px;
     }
 
     .hw-contact__address {
@@ -166,4 +179,5 @@
     .hw-summary__title {
         font-size: 1.5em;
     }
+
 }
