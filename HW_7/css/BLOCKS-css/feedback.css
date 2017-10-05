@@ -1,0 +1,30 @@
+.hw-feedback__icons
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
+
+    justify-content: center;
+}
+
+.hw-feedback__icon
+{
+    display: inline-block;
+
+    margin-right: 40px;
+}
+
+.hw-feedback__icon:last-of-type{
+    margin-right: 0;
+}
+
+.hw-feedback__link
+{
+    font-size: 1.2em;
+
+    color: inherit;
+}

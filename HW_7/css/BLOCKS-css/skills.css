@@ -1,0 +1,108 @@
+.hw-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hw-skills__image
+{
+    width: 50%;
+    min-height: 320px;
+
+    background: url('../../images/1.jpg') center/cover no-repeat;
+}
+
+.hw-skills__skills
+{
+    width: 50%;
+    min-height: 320px;
+
+    background-color: #e4ad59;
+}
+
+.hw-skills__title
+{
+    font-size: 2.0em;
+    font-weight: 500;
+
+    margin-top: 50px;
+    /*margin-left: 50px;*/
+
+    color: white;
+}
+
+.hw-skills__subtitle
+{
+    font-size: .8em;
+    font-weight: 500;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    /*margin-left: 50px;*/
+
+    color: white;
+}
+
+.hw-skills__name
+{
+    overflow: hidden;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hw-skills__header
+{
+    font-weight: 600;
+
+    float: left;
+}
+
+.hw-skills__percentage
+{
+    font-weight: 600;
+
+    float: right;
+
+    color: white;
+}
+
+.hw-skills__row
+{
+    position: relative;
+
+    width: 80%;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 10%;
+
+    background-color: white;
+}
+.hw-skills__progress{
+    height: 3px;
+    background-color: black;
+}
+
+
+.hw-skills__skill
+{
+    margin-bottom: 15px;
+}
+
+.hw-skills__skill:last-of-type
+{
+    margin-bottom: 35px;
+}
+
+.hw-skills__skill:last-of-type .hw-skills__progress{
+    width: 80%;
+}
+
+.hw-skills__skill:nth-child(2) .hw-skills__progress
+{
+    width: 90%;
+}
+
+.hw-skills__skill:nth-child(3) .hw-skills__progress
+{
+    width: 70%
+}

@@ -1,0 +1,41 @@
+.hw-connection__title
+{
+    font-size: 2em;
+
+    margin-bottom: 30px;
+}
+
+.hw-connection-icons
+{
+    color: #7f7d79;
+}
+
+.hw-connection__icon-item
+{
+    margin-bottom: 25px;
+
+    color: #7f7d79;
+}
+
+.hw-connection__number
+{
+    margin-left: 7px;
+}
+
+.hw-connection__email
+{
+    margin-left: 7px;
+
+    text-decoration: none;
+
+    color: #e3af5c;
+}
+
+.hw-connection__site
+{
+    margin-left: 7px;
+
+    text-decoration: none;
+
+    color: #e3af5c;
+}

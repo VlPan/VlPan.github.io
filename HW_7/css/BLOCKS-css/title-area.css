@@ -1,0 +1,63 @@
+.hw-title-area__upper-title
+{
+    font-size: .7em;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #aea3a3;
+}
+
+.hw-title-area__bold
+{
+    font-weight: 500;
+
+    color: black;
+}
+
+.hw-title-area__title
+{
+    font-size: 2em;
+    font-weight: 300;
+
+    margin-bottom: 30px;
+
+    color: #5d696e;
+}
+
+.hw-title-area__subtitle
+{
+    font-size: .9em;
+    line-height: 21px;
+
+    margin-bottom: 60px;
+
+    color: #90a4ab;
+}
+
+.hw-title-area__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hw-title-area__button
+{
+    font-size: .8em;
+    font-weight: 700;
+
+    padding: 10px 30px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.hw-title-area__inline{
+    display: inline-block;
+}

@@ -1,0 +1,25 @@
+.hw-footer
+{
+    height: 380px;
+
+    text-align: center;
+
+    color: #7f7d79;
+}
+
+.hw-footer__copy
+{
+    margin-top: 150px;
+}
+
+.hw-footer__author-link
+{
+    text-decoration: none;
+
+    color: #e3af5c;
+}
+
+.hw-footer__feedback
+{
+    margin-top: 60px;
+}

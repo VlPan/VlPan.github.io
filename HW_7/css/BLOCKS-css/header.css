@@ -1,0 +1,31 @@
+.hw-header
+{
+    overflow: auto;
+
+    width: 100%;
+    height: auto;
+}
+
+
+
+.hw-header__header-img
+{
+    width: 50%;
+    min-height: 820px;
+
+    background: url('../../images/5.jpg') center/cover no-repeat;
+}
+
+.hw-header__header-represent
+{
+    width: 50%;
+    min-height: 820px;
+
+    background-color: #f1e1d8;
+}
+
+.hw-header__title-area
+{
+    margin-top: 190px;
+    margin-left: 40px;
+}

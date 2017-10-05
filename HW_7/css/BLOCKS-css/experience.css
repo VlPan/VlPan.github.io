@@ -1,0 +1,23 @@
+.hw-experience__img
+{
+    width: 50%;
+    min-height: 385px;
+
+    background: url('../../images/4.jpg') center/cover no-repeat;
+}
+
+.hw-experience__desc
+{
+    width: 50%;
+    min-height: 385px;
+
+    background-color: #ea714d;
+}
+
+.hw-experience__desc{
+    color: white;
+}
+
+.hw-experience__experience-list{
+    color: white;
+}

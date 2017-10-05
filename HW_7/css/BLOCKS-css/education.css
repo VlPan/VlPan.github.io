@@ -1,0 +1,15 @@
+.hw-education__desc
+{
+    width: 50%;
+    min-height: 385px;
+    color: white;
+    background-color: #e4ad59;
+}
+
+.hw-education__img
+{
+    width: 50%;
+    /*min-height: 445px;*/
+
+    background: url('../../images/3.jpg') center no-repeat;
+}

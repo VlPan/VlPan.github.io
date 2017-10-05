@@ -1,0 +1,37 @@
+.hw-global-container{
+    max-width: 2100px;
+    margin: 0 auto;
+}
+
+.hw-container /* Block Wrapper */
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hw-container--narrow /* Block Wrapper */
+{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.hw-container--wide /* Block Wrapper */
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.hw-flex-container
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap;
+}
+
+.hw-flex-container--reverse{
+    flex-wrap: wrap-reverse;
+}

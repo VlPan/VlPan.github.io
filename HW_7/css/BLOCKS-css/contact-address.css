@@ -1,0 +1,53 @@
+.hw-contact__flex-container
+{
+    width: 50%;
+}
+
+.hw-contact__flex-container--white-text
+{
+    color: white;
+}
+
+.hw-contact__form
+{
+    width: 50%;
+    min-height: 610px;
+
+    background-color: coral;
+}
+
+.hw-contact-form__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hw-contact__img
+{
+    width: 50%;
+    min-height: 610px;
+
+    background: url('../../images/2.jpg') center/cover no-repeat;
+}
+
+.hw-contact__address
+{
+    width: 50%;
+    min-height: 610px;
+
+    background-color: black;
+}
+
+.hw-contact__title
+{
+    font-size: 1.5em;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.hw-contact__subtitle
+{
+    margin-bottom: 50px;
+
+    color: #7f7d79;
+}

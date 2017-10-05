@@ -1,0 +1,40 @@
+.hw-navigation__list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 100px;
+
+    -ms-flex-wrap: wrap;
+
+    flex-wrap: wrap;
+
+}
+
+.hw-navigation__list-item
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.hw-navigation__link
+{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #5d696e;
+}
+
+.hw-navigation__link--active
+{
+    color: #dab35f;
+}
+
+.hw-navigation__link:hover
+{
+    text-decoration: none;
+
+    color: #dab35f;
+}

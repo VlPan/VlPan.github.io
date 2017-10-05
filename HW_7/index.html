@@ -10,52 +10,74 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/about-author.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/advantages.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/conctact-form.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/connection.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/contact-address.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/containers.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/education.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/experience.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/experience-list.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/feedback.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/footer.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/header.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/introduction.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/nav.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/skills.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/summary.css">
+    <link rel="stylesheet" href="css/BLOCKS-css/title-area.css">
     <link rel="stylesheet" href="css/queries.css">
 
 
 </head>
 <body>
 
-<div class="hw-global-container">
+<div class="hw-global-container"> <!--Wrapper block -->
 <section class="hw-header">
-
     <div class="hw-flex-container hw-header__flex-container"> <!-- Wrapper Block, Element -->
         <div class="hw-header__header-img">  <!-- Element -->
 
         </div>
         <div class="hw-header__header-represent"> <!-- Element -->
             <div class="hw-header__navigation hw-navigation">  <!-- Block Element -->
-                <ul class="hw-navigation__list">
-                    <li class="hw-navigation__list-item"><a href="#title-area"
-                                                            class="hw-navigation__link hw-navigation__link--active">home</a>
-                    </li>
-                    <li class="hw-navigation__list-item"><a href="#hw-about-author" class="hw-navigation__link">about me</a></li>
-                    <li class="hw-navigation__list-item"><a href="#hw-advantages" class="hw-navigation__link">experience</a></li>
-                    <li class="hw-navigation__list-item"><a href="#hw-summary" class="hw-navigation__link">testimonial
-                    </a></li>
-                    <li class="hw-navigation__list-item"><a href="#hw-contact" class="hw-navigation__link">contact</a></li>
-                </ul>
+                <div class="hw-container--wide">
+                    <ul class="hw-navigation__list">
+
+                        <li class="hw-navigation__list-item"><a href="#title-area"
+                                                                class="hw-navigation__link hw-navigation__link--active">home</a>
+                        </li>
+                        <li class="hw-navigation__list-item"><a href="#hw-about-author" class="hw-navigation__link">about me</a></li>
+                        <li class="hw-navigation__list-item"><a href="#hw-advantages" class="hw-navigation__link">experience</a></li>
+                        <li class="hw-navigation__list-item"><a href="#hw-summary" class="hw-navigation__link">testimonial
+                        </a></li>
+                        <li class="hw-navigation__list-item"><a href="#hw-contact" class="hw-navigation__link">contact</a></li>
+
+                    </ul>
+                </div>
             </div><!-- Block, Element -->
 
 
-            <div class="title-area hw-header__title-area" id="title-area"> <!-- Block, Element -->
+            <div class="hw-title-area hw-header__title-area" id="title-area"> <!-- Block, Element -->
                 <div class="hw-container">
-                    <h4 class="title-area__upper-title">welcome to my website</h4> <!-- Element -->
-                    <h1 class="title-area__title">Hello, I am <b class="title-area__bold">Stimulus</b> currently based
+                    <h4 class="hw-title-area__upper-title">welcome to my website</h4> <!-- Element -->
+                    <h1 class="hw-title-area__title">Hello, I am <b class="title-area__bold">Stimulus</b> currently based
                         in
-                        <div class="title-area__inline">New York</div>
+                        <div class="hw-title-area__inline">New York</div>
                         city.
                     </h1><!-- Element -->
-                    <p class="title-area__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <p class="hw-title-area__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Accusantium
                         ducimus earum nemo perspiciatis reprehenderit ut, veritatis? Ad, aliquam at autem deleniti dolor
                         ducimus eius enim error facilis </p>
+
                     <!-- Element -->
 
 
-                    <button class="title-area__button hw-button-transparent">
-                        <a href="#n" class="hw-button-transparent__link">Get Started</a>
+                    <button class="hw-title-area__button">
+                        <a href="#n" class="hw-title-area__link">Get Started</a>
                     </button>
+
 
                 </div>
             </div>
@@ -66,11 +88,9 @@
 
 <section class="hw-about-author" id="hw-about-author">  <!-- Block -->
 
-
-
     <div class="hw-flex-container hw-about-author__flex-container"> <!-- Wrapper Block, Element -->
         <div class="hw-about-author__character"> <!-- Element -->
-            <div class="hw-container-wide">
+            <div class="hw-container--wide">
                 <h1 class="hw-about-author__title">Donec auctor</h1> <!-- Element -->
                 <p class="hw-about-author__subtitle">Sed vulpulate vitae diam quis bibedum</p> <!-- Element -->
                 <p class="hw-about-author__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -86,7 +106,7 @@
         </div>
 
 
-        <div class="hw-skills hw-about-author__advantages"> <!-- Block -->
+            <div class="hw-skills hw-about-author__advantages"> <!-- Block -->
             <!--<div class="hw-flex-container hw-skills__flex-container "> &lt;!&ndash; Wrapper Block, Element &ndash;&gt;-->
                 <div class="hw-skills__image"></div> <!-- Element -->
                 <div class="hw-skills__skills"> <!-- Element -->
@@ -94,34 +114,33 @@
                         <h1 class="hw-skills__title">My Skills</h1> <!-- Element -->
                         <h4 class="hw-skills__subtitle">Photoshop, HTML, CSS, JS, WebDesign</h4> <!-- Element -->
                     </div>
-                    <div class="hw-skill hw-skills__skill"> <!-- Block Element -->
-                        <div class="hw-skill__title"> <!-- Element -->
-                            <h1 class="hw-skill__header">Front-end Design</h1> <!-- Element -->
-                            <h1 class="hw-skill__percentage">90%</h1> <!-- Element -->
+                    <div class="hw-skills__skill"> <!--Element -->
+                        <div class="hw-skills__name"> <!-- Element -->
+                            <h1 class="hw-skills__header">Front-end Design</h1> <!-- Element -->
+                            <h1 class="hw-skills__percentage">90%</h1> <!-- Element -->
 
                         </div>
-                        <div class="hw-skill__row"></div> <!-- Element -->
+                        <div class="hw-skills__row"><div class="hw-skills__progress"></div></div> <!-- Element -->
                     </div>
-                    <div class="hw-skill hw-skills__skill"> <!-- Block Element -->
-                        <div class="hw-skill__title"> <!-- Element -->
-                            <h1 class="hw-skill__header">Backend processing</h1> <!-- Element -->
-                            <h1 class="hw-skill__percentage">70%</h1> <!-- Element -->
+                    <div class="hw-skills__skill"> <!-- Element -->
+                        <div class="hw-skills__name"> <!-- Element -->
+                            <h1 class="hw-skills__header">Backend processing</h1> <!-- Element -->
+                            <h1 class="hw-skills__percentage">70%</h1> <!-- Element -->
                         </div>
-                        <div class="hw-skill__row"></div> <!-- Element -->
+                        <div class="hw-skills__row"><div class="hw-skills__progress"></div></div> <!-- Element -->
                     </div>
-                    <div class="hw-skill hw-skills__skill"> <!-- Block Element -->
-                        <div class="hw-skill__title"> <!-- Element -->
-                            <h1 class="hw-skill__header">Backend processing</h1> <!-- Element -->
-                            <h1 class="hw-skill__percentage">70%</h1> <!-- Element -->
+                    <div class="hw-skills__skill"> <!-- Element -->
+                        <div class="hw-skills__name"> <!-- Element -->
+                            <h1 class="hw-skills__header">Backend processing</h1> <!-- Element -->
+                            <h1 class="hw-skills__percentage">80%</h1> <!-- Element -->
                         </div>
-                        <div class="hw-skill__row"></div> <!-- Element -->
+                        <div class="hw-skills__row"><div class="hw-skills__progress"></div></div> <!-- Element -->
                     </div>
+                </div>
 
-
-
-                </div> <!-- Block, Element -->
-            <!--</div>-->
         </div>
+
+
     </div>
 </section>
 
@@ -129,10 +148,10 @@
 <section class="hw-advantages" id="hw-advantages"> <!-- Block -->
 
     <div class="hw-flex-container">
-        <div class="hw-flex-container hw-advantages__flex-container hw-advantages__flex-container--reverse">
+        <div class="hw-flex-container hw-flex-container--reverse hw-advantages__flex-container">
             <!-- Wrapper Block, Element -->
 
-            <div class="hw-advantages__item"> <!-- Element -->
+            <div class="hw-advantages__item hw-advantages__item--white-orange"> <!-- Element -->
                 <div class="hw-container"> <!-- Wrapper Block  -->
                     <i class="hw-advantages__icon fa fa-desktop" aria-hidden="true"></i> <!-- Element -->
 
@@ -142,7 +161,7 @@
                         quis tenetur.</p>
                 </div>
             </div>
-            <div class="hw-advantages__item"> <!-- Element -->
+            <div class="hw-advantages__item hw-advantages__item--black-orange"> <!-- Element -->
                 <div class="hw-container"> <!-- Wrapper Block  -->
                     <i class="hw-advantages__icon fa fa-paper-plane" aria-hidden="true"></i> <!-- Element -->
 
@@ -157,7 +176,7 @@
         <div class="hw-flex-container hw-advantages__flex-container hw-advantages__flex-container--reverse">
             <!-- Wrapper Block, Element -->
 
-            <div class="hw-advantages__item hw-advantages__item--another-color"> <!-- Element -->
+            <div class="hw-advantages__item hw-advantages__item--black"> <!-- Element -->
                 <div class="hw-container"> <!-- Wrapper Block  -->
                     <i class="hw-advantages__icon fa fa-calendar" aria-hidden="true"></i><!-- Element -->
 
@@ -167,7 +186,7 @@
                         quis tenetur.</p>
                 </div>
             </div>
-            <div class="hw-advantages__item hw-advantages__item--another-color"> <!-- Element -->
+            <div class="hw-advantages__item hw-advantages__item--reverse-color"> <!-- Element -->
                 <div class="hw-container"> <!-- Wrapper Block  -->
                     <i class="hw-advantages__icon fa fa-html5" aria-hidden="true"></i> <!-- Element -->
 
@@ -269,7 +288,7 @@
 
 <section class="hw-summary" id="hw-summary"> <!--Block -->
 
-    <div class="hw-container-narrow">
+    <div class="hw-container--narrow">
         <i class="hw-summary__icon-star fa fa-star" aria-hidden="true"></i>
         <div class="hw-summary__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, praesentium!</div>
         <div class="hw-summary__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
@@ -283,7 +302,7 @@
 <section class="hw-contact" id="hw-contact"> <!--Block -->
     <div class="hw-flex-container"> <!-- Wrapper Block -->
         <div class="hw-contact__form"> <!-- Block, Element -->
-            <div class="hw-introduction"> <!-- Element, Block -->
+            <div class="hw-introduction hw-contact__introduction"> <!-- Element, Block -->
                 <div class="hw-container hw-introduction__container"> <!-- Element, Block-Wrapper -->
                     <h1 class="hw-introduction__title">Say Hello..</h1> <!-- Element -->
                     <h4 class="hw-introduction__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
@@ -304,15 +323,15 @@
                                name="email"
                                placeholder="Your Email"> <!-- Element -->
 
-                        <textarea class="hw-contact-from__message"
+                        <textarea class="hw-contact-form__message"
                                   name="message"
                                   id=""
                                   cols="30"
                                   rows="10"
                                   placeholder="Write your message:"></textarea> <!-- Element -->
 
-                        <button type="submit" class="hw-contact-from__btn">
-                            <a class="hw-contact-from__link" href="#n">Send</a>
+                        <button type="submit" class="hw-contact-form__btn">
+                            <a class="hw-contact-form__link" href="#n">Send</a>
                         </button>
                     </form>
                 </div>
@@ -327,6 +346,7 @@
             <div class="hw-contact__img"></div>  <!-- Wrapper Block, Element -->
             <div class="hw-contact__address"> <!-- Wrapper Block, Element -->
                 <div class="hw-container">
+
                     <div class="hw-contact__title">Visit my office</div> <!-- Element -->
                     <div class="hw-contact__subtitle">456 New Street 22000,
                         <div class="hw-contact__inline">New York City</div>
@@ -340,25 +360,25 @@
 
                         <div class="hw-connection__icons">
                             <div class="hw-connection__icon-item">
-                                <div class="hw-phone hw-connection__phone"> <!-- Block, Element -->
-                                    <i class="fa fa-phone hw-phone__phone" aria-hidden="true"></i> <!-- Element -->
-                                    <span class="hw-phone__number">01--0110-0220</span> <!-- Element -->
+                                <div class="hw-connection__phone"> <!-- Block, Element -->
+                                    <i class="fa fa-phone hw-connection__phone-icon" aria-hidden="true"></i> <!-- Element -->
+                                    <span class="hw-connection__number">01--0110-0220</span> <!-- Element -->
                                 </div>
                             </div>
 
                             <div class="hw-connection__icon-item">
-                                <div class="hw-email hw-connection__envelope"> <!-- Block, Element -->
-                                    <i class="fa fa-envelope-o hw-email__envelope" aria-hidden="true"></i>
+                                <div class="hw-connection__envelope"> <!-- Block, Element -->
+                                    <i class="fa fa-envelope-o hw-connection__envelope-icon" aria-hidden="true"></i>
                                     <!-- Element -->
-                                    <a href="#n" class="hw-email__email">hello@company.co</a> <!-- Element -->
+                                    <a href="#n" class="hw-connection__email">hello@company.co</a> <!-- Element -->
                                 </div>
                             </div>
 
 
                             <div class="hw-connection__icon-item">
-                                <div class="hw-site hw-connection__site">
-                                    <i class="fa fa-globe hw-site__globe" aria-hidden="true"></i>
-                                    <a href="#n" class="hw-site__site">company.co</a>
+                                <div class="hw-connection__globe">
+                                    <i class="fa fa-globe hw-connection__globe-icon" aria-hidden="true"></i>
+                                    <a href="#n" class="hw-connection__site">company.co</a>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +396,7 @@
         Copyright &copy 2016 Your Company | Design: <a href="#n" class="hw-footer__author-link">tempalemo</a>
     </div>
 
-    <div class="hw-feedback hw-footer__feedback">
+    <div class="hw-feedback hw-footer__feedback"> <!-- Block -->
         <div class="hw-feedback__icons">
             <div class="hw-feedback__icon">
                 <a href="#n" class="hw-feedback__link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -399,5 +419,7 @@
 </footer>
 
 </div>
+
+<!--<script src="js.js"></script>-->
 </body>
 </html>

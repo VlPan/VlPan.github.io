@@ -1,0 +1,43 @@
+
+.hw-experience-list__item
+{
+    margin-bottom: 30px;
+}
+
+.hw-experience-list__laptop
+{
+    font-size: 50px;
+
+    float: left;
+
+    margin-right: 30px;
+}
+
+.hw-experience-list__job
+{
+    font-size: 1.2em;
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+}
+
+.hw-experience-list__date
+{
+    font-size: 1em;
+    font-weight: 700;
+
+    display: inline-block;
+
+    color: #6d4330;
+}
+
+.hw-experience-list__date--green-black_color{
+    color: #937c30;
+}
+
+.hw-experience-list__desc
+{
+    font-size: .9em;
+    line-height: 20px;
+}
