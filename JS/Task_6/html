@@ -1,0 +1,97 @@
+<!--<div class="w10-calendar w10-calendar&#45;&#45;small-width"> &lt;!&ndash; Block, Mod &ndash;&gt;-->
+    <!--<div class="w10-calendar__container">-->
+        <!--<div class="w10-calendar__header">-->
+            <!--<h2 class="w10-calendar__timer">10:40:55</h2>-->
+            <!--<h3 class="w10-calendar__date">21 Октября 2017 г.</h3>-->
+        <!--</div>-->
+        <!--<hr class="w10-calendar__hr">-->
+        <!--<div class="w10-calendar__manage-panel">-->
+            <!--<div class="w10-calendar__month-year">Октябрь 2017</div>-->
+            <!--<div class="w10-calendar__control">-->
+                <!--<div class="w10-calendar__prev-month"> <</div>-->
+                <!--<div class="w10-calendar__next-month"> ></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="w10-calendar__days-of-week">-->
+            <!--<div class="w10-calendar__day">Пн</div>-->
+            <!--<div class="w10-calendar__day">Вт</div>-->
+            <!--<div class="w10-calendar__day">Ср</div>-->
+            <!--<div class="w10-calendar__day">Чт</div>-->
+            <!--<div class="w10-calendar__day">Пн</div>-->
+            <!--<div class="w10-calendar__day">Сб</div>-->
+            <!--<div class="w10-calendar__day">Вс</div>-->
+        <!--</div>-->
+
+        <!--<div class="w10-calendar__days">-->
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">25</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">26</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">27</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">28</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">29</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">30</div>-->
+                <!--<div class="w10-calendar__day">1</div>-->
+            <!--</div>-->
+
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day">2</div>-->
+                <!--<div class="w10-calendar__day">3</div>-->
+                <!--<div class="w10-calendar__day">4</div>-->
+                <!--<div class="w10-calendar__day">5</div>-->
+                <!--<div class="w10-calendar__day">6</div>-->
+                <!--<div class="w10-calendar__day">7</div>-->
+                <!--<div class="w10-calendar__day">8</div>-->
+            <!--</div>-->
+
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day">9</div>-->
+                <!--<div class="w10-calendar__day">10</div>-->
+                <!--<div class="w10-calendar__day">11</div>-->
+                <!--<div class="w10-calendar__day">12</div>-->
+                <!--<div class="w10-calendar__day">13</div>-->
+                <!--<div class="w10-calendar__day">14</div>-->
+                <!--<div class="w10-calendar__day">15</div>-->
+
+            <!--</div>-->
+
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day">16</div>-->
+                <!--<div class="w10-calendar__day">17</div>-->
+                <!--<div class="w10-calendar__day">18</div>-->
+                <!--<div class="w10-calendar__day">19</div>-->
+                <!--<div class="w10-calendar__day">20</div>-->
+                <!--<div class="w10-calendar__day">21</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;TODAY">22</div>-->
+            <!--</div>-->
+
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day">23</div>-->
+                <!--<div class="w10-calendar__day">24</div>-->
+                <!--<div class="w10-calendar__day">25</div>-->
+                <!--<div class="w10-calendar__day">26</div>-->
+                <!--<div class="w10-calendar__day">27</div>-->
+                <!--<div class="w10-calendar__day">28</div>-->
+                <!--<div class="w10-calendar__day">29</div>-->
+            <!--</div>-->
+
+            <!--<div class="w10-calendar__row">-->
+                <!--<div class="w10-calendar__day">30</div>-->
+                <!--<div class="w10-calendar__day">31</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">1</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">2</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">3</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">4</div>-->
+                <!--<div class="w10-calendar__day w10-calendar__day&#45;&#45;not-present">5</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<hr class="w10-calendar__hr">-->
+        <!--<div class="w10-calendar__events">-->
+            <!--<div class="w10-calendar__flex">-->
+                <!--<h2 class="w10-calendar__today">Сегодня</h2>-->
+                <!--<h1 class="w10-calendar__add-event">+</h1>-->
+            <!--</div>-->
+            <!--<h3 class="w10-calendar__some-events">Нет событий</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
