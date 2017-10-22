@@ -1,0 +1,127 @@
+.container{
+    text-align: center;
+}
+
+
+nav{
+    width: 100%;
+    background-image: url(../img/repeat_quote.jpg);
+    height: 80px;
+}
+
+nav ul{
+
+    display: inline-block;
+    margin-left: 50px;
+    height: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+nav ul li:hover{
+    background-color: #fff;
+}
+
+/*#points_for_day{*/
+    /*margin-top: 100px;*/
+/*}*/
+
+.points{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 70px;
+    color: black;
+}
+
+#points_for_day{
+    font-size: 1.3em;
+    color:#f44242;
+}
+
+nav ul li a{
+
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    font-size: 20px;
+    line-height: 80px;
+    outline: none;
+    color: #fff;
+    transition: all .3s;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #31b0d5;
+}
+
+
+
+#days{
+    margin-top: 40px;
+}
+.day{
+    display: inline-block;
+    width: 70%;
+    /*background-color: #4286f4;*/
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.day span:last-child{
+    color:orangered;
+}
+
+.day span:first-child{
+    color: blueviolet;
+}
+
+
+
+.day_description{
+    box-shadow: 1px 2px 5px rgba(2,2,2,.4);
+    width: 68%;
+    display: inline-block;
+    margin: 0;
+    background-color:#8bcddd;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+
+}
+
+
+.day_description ul li{
+    list-style: none;
+}
+
+
+.day #date{
+    margin-right: 20px;
+}
+
+.title{
+    display:block;
+    text-align: center;
+    text-transform: uppercase;
+    color:#78a5ed;
+    font-size: 40px;
+}
+
+.mission{
+    color: orangered;
+    font-size: 12px;
+    margin-right: 10px;
+}

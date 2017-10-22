@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Тайм-менаджемент</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/fonts/">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="css/history.css" rel="stylesheet">
+
+
+</head>
+<body onload = "fetchDays()">
+
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+    </ul>
+
+
+</nav>
+
+
+
+<div class="container">
+    <h4 class="points">Очки за день: <span id="points_for_day"></span></h4>
+    <h1 class="title">history</h1>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="days">
+                <!--<div class="day well">Дата: <span id="date">28.07.2017</span> Очки: <span id="points">980</span></div>-->
+                <!--<div class="day_description hide">-->
+                    <!--<ul class="ul-history">-->
+                        <!--<li>WedDesign</li>-->
+                        <!--<li>JS</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="test.js"></script>
+<script src="js/history.js"></script>
+</body>
+</html>

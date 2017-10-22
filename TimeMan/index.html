@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Тайм-менаджемент</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/fonts/">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/queries.css">
+
+</head>
+
+<body onload="fetchInformation()">
+<nav>
+    <ul>
+        <li><a href="">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+    </ul>
+
+    <h4 class="points">Очки за день: <span id="points_for_day"></span></h4>
+</nav>
+
+<div class="container">
+<div class="row">
+
+
+
+    <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12">
+    <div id="random_action_area">
+        <div id="random_action">
+            <h3>random action here..</h3>
+            <h2 id="action">Action example</h2>
+        </div>
+
+        <div class="btn btn-default" id="start">Начать</div><br>
+        <div class="btn btn-danger hide" id="skip">Пропустить</div>
+        <div class="btn btn-success hide" id="accept">Принять</div><br>
+        <div id="timer" class="hide">00 . 00 . 00 . 000</div>
+        <button class="btn btn-default hide" id="toggle_btn">Пауза</button>
+        <button class="btn btn-default hide" id="reset_btn">Сброс</button>
+        <div class="btn btn-success hide" id="end">Закончить</div><br>
+        <h4 id="concentration_description" class="hide">Укажите насколько вы были сконцентрированы при выполеннии данного дела:</h4>
+        <div class="btn btn-default hide" id="bad">Плохо</div>
+        <div class="btn btn-default hide" id="normal">Нормально</div>
+        <div class="btn btn-default hide" id="good">Хорошо</div>
+        <div class="btn btn-default hide" id="great">Отлично</div>
+        <h4 class="hide" id="diff">Укажите насколько сложно вам было выпонить данное дело:</h4>
+        <div class="btn btn-default hide" id="easy_diff">Легко</div>
+        <div class="btn btn-default hide" id="normal_diff">Нормально</div>
+        <div class="btn btn-default hide" id="hard_diff">Тяжело</div>
+    </div>
+
+        <!--<div class="well alert-zone">-->
+            <!--<h2>Зона уведомлений</h2>-->
+            <!--<span id="red_alert"></span>-->
+        <!--</div>-->
+
+        <h3 id="mission_title">Добавить миссию</h3>
+        <form action="" id="mission_form">
+            <input class="form-control" type="text" placeholder = "Введите дело" id="mission_input">
+            <input class="form-control" type="number" placeholder = "К-эф" id="points_input" value = "300">
+            <button class="btn btn-success" id="add_new_mission">добавить</button>
+
+        </form>
+        <hr>
+        <ul id="missions_ul">
+
+        </ul>
+</div>
+
+    <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+
+        <h3 id="random_actions_title">Случайные дела</h3><i class="fa fa-question-circle" aria-hidden="true"></i>
+        <form action="" id="action_form">
+            <input class="form-control" type="text" placeholder = "Введите дело" id="action_input">
+            <input class="form-control" type="number" placeholder = "К-эф" id="ratio_input" value = "3">
+            <button class="btn btn-success" id="add_new_action">добавить</button>
+
+        </form>
+        <hr>
+        <ul id="actions_ul">
+
+        </ul>
+    </div>
+
+
+</div>
+
+    <div class="row">
+        <div class="col-lg-7">
+        </div>
+    </div>
+</div>
+
+
+<script src="test.js"></script>
+<script src="js/stopwatch.js"></script>
+<script src="jquery/jquery-3.2.1.min.js"></script>
+<script src="js/Day.js"></script>
+<script src="js/Mission.js"></script>
+<script src="js/Action.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
