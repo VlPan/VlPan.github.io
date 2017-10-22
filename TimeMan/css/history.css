@@ -97,8 +97,9 @@ nav ul li a:hover{
     margin: 0;
     background-color:#8bcddd;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 25px;
+    overflow: auto;
 
 }
 

@@ -64,7 +64,7 @@ nav ul li a:hover{
 
 #random_action{
     margin-top: 30px;
-    height: 120px;
+    min-height: 120px;
     width: 90%;
     border-radius: 20px;
     box-shadow: 1px 2px 4px rgba(0,0,0,.2);
