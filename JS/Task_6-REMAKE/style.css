@@ -1,0 +1,105 @@
+
+
+
+.w10-calendar{
+    min-width: 350px;
+    font-size: .8em;
+}
+
+.w10-calendar--small-width{
+    width: 350px;
+}
+
+.w10-calendar__container{
+    color: #fbf9e4;
+    background: rgba(0,0,0, .6);
+    padding: 15px;
+}
+
+/*.w10-calendar__days-of-week{*/
+/*display: flex;*/
+/*justify-content: space-around;*/
+/*}*/
+
+.w10-calendar__row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.w10-calendar__day{
+    padding: 10px 0;
+    width: 14.2%;
+    min-width: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.w10-calendar__timer{
+    color: white;
+    margin: 0;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+
+.w10-calendar__day:hover{
+    outline: 3px solid #fbf9e4;
+}
+
+.w10-calendar__control{
+    display: flex;
+    padding: 0 40px;
+    margin-left: auto;
+}
+
+.w10-calendar__manage-panel{
+    display: flex;
+}
+
+.w10-calendar__prev-month, .w10-calendar__next-month{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.w10-calendar__day--not-present{
+    color: darkgrey;
+}
+
+.w10-calendar__date{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.w10-calendar__month-year{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.w10-calendar__day--not-present:hover{
+    outline: 3px solid darkgrey;
+}
+
+.w10-calendar__day--TODAY{
+    background-color: dodgerblue;
+}
+
+.w10-calendar__add-event{
+    cursor: pointer;
+}
+
+
+.w10-calendar__flex{
+    display: flex;
+}
+
+.w10-calendar__today{
+
+}
+
+.w10-calendar__add-event{
+    margin-left: auto;
+    padding: 0 20px;
+}

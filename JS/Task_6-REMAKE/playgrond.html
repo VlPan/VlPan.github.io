@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        h3 {
+            margin: 15px 0 0;
+            color: rgb(120, 120, 120);
+        }
+
+        li {
+            margin: 2px 0;
+            overflow: auto;
+            border: 1px solid rgb(240, 240, 240);
+        }
+
+        .left {
+            float: left;
+            margin: 0 5px 0 0;
+            color: gray;
+        }
+
+        .right {
+            float: right;
+            color: orange;
+        }
+    </style>
+
+</head>
+<body>
+
+<h3>Recursive DOM creation</h3>
+<ul id="append-native-here">
+</ul>
+
+
+<script>
+    var myApp = {};
+    myApp.dom = {
+        tag: 'li',
+        class: 'selected',
+        title: 'A list item',
+        content: [{
+            tag: 'span',
+            text: 'I am a span',
+            class: 'left'
+        },
+            {
+                tag: 'span',
+                class: 'right',
+                text: 'I am a second span'
+            },
+            {
+                tag: 'input',
+                type: 'hidden',
+                name: 'selector_object[]',
+                value: 10
+            }]
+    };
+
+
+</script>
+
+<script src="playground.js"></script>
+</body>
+</html>
