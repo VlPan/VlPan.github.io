@@ -83,7 +83,7 @@ var component = renderer.create({
                     }, daysObjects, 'getDate', [
                         {
                             styleClass: 'w10-calendar__day--TODAY',
-                            condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()
+                            condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()   + '&&' + 'arrOfContext[index].getFullYear() ===' + datePicker.currentDate.getFullYear()
                         },
                         {
                             styleClass: 'w10-calendar__day--not-present',
