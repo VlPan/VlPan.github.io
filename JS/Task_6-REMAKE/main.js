@@ -1,6 +1,5 @@
 var renderer = new Renderer();
 var datePicker = new DatePicker();
-
 var daysObjects = datePicker.generateArrayOfDaysByMonth(datePicker.currentDate.getMonth() - 1,
     datePicker.currentDate.getFullYear());
 
@@ -40,7 +39,7 @@ var component = renderer.create({
                         {
                             tag: 'div',
                             classes: 'w10-calendar__month-year',
-                            textContent: datePicker.monthNames[datePicker.pickedMonth] + ' ' + datePicker.pickedYear
+                            textContent: datePicker.monthNames[datePicker.currentDate.getMonth()] + ' ' + datePicker.currentDate.getFullYear()
                         },
                         {
                             tag: 'div',
@@ -51,7 +50,7 @@ var component = renderer.create({
                                     classes: 'w10-calendar__prev-month',
                                     textContent: ' < ',
                                     eventHandlers: {
-                                        'onclick': "test('PrevMonth')"
+                                        'onclick': "prevMonth()"
                                     }
                                 },
                                 {
@@ -59,7 +58,7 @@ var component = renderer.create({
                                     classes: 'w10-calendar__next-month',
                                     textContent: ' > ',
                                     eventHandlers: {
-                                        'onclick': "test('NextMonth')"
+                                        'onclick': "nextMonth()"
                                     }
 
                                 }
@@ -131,8 +130,89 @@ var component = renderer.create({
         }
     ]
 });
+
 renderer.render(component, 'body');
 
-function test(a) {
-    alert(a);
+
+var pickedMonth = datePicker.currentDate.getMonth();
+var pickedYear = datePicker.currentDate.getFullYear();
+
+
+
+function nextMonth() {
+
+    var daysContainer = document.querySelector('.w10-calendar__days');
+    var monthAndYearString = document.querySelector('.w10-calendar__month-year');
+    pickedMonth ++;
+    if(pickedMonth === 11){
+        pickedYear++;
+        pickedMonth = 0;
+    }
+    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth - 1, pickedYear);
+
+    var partToRender = renderer.create( {
+        tag: 'div',
+        classes: 'w10-calendar__days',
+        childrens: renderer.createElementsWithDifferentContext({
+            tag: 'div',
+            classes: ['w10-calendar__day']
+        }, daysObjects, 'getDate', [
+            {
+                styleClass: 'w10-calendar__day--TODAY',
+                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()
+            },
+            {
+                styleClass: 'w10-calendar__day--not-present',
+                condition: 'index<' + datePicker.prevDays.length
+            },
+            {
+                styleClass: 'w10-calendar__day--not-present',
+                condition: 'index>=' + (daysObjects.length - datePicker.nextDays.length)
+            }
+        ])
+    });
+    monthAndYearString.textContent = datePicker.monthNames[pickedMonth] + ' ' + pickedYear;
+    daysContainer.innerHTML = "";
+    daysContainer.appendChild(partToRender);
 }
+
+function prevMonth() {
+
+    var daysContainer = document.querySelector('.w10-calendar__days');
+    var monthAndYearString = document.querySelector('.w10-calendar__month-year');
+    pickedMonth --;
+    if(pickedMonth === -1){
+        pickedYear--;
+        pickedMonth = 11;
+    }
+    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth - 1, pickedYear);
+
+    var partToRender = renderer.create( {
+        tag: 'div',
+        classes: 'w10-calendar__days',
+        childrens: renderer.createElementsWithDifferentContext({
+            tag: 'div',
+            classes: ['w10-calendar__day']
+        }, daysObjects, 'getDate', [
+            {
+                styleClass: 'w10-calendar__day--TODAY',
+                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()
+            },
+            {
+                styleClass: 'w10-calendar__day--not-present',
+                condition: 'index<' + datePicker.prevDays.length
+            },
+            {
+                styleClass: 'w10-calendar__day--not-present',
+                condition: 'index>=' + (daysObjects.length - datePicker.nextDays.length)
+            }
+        ])
+    });
+    monthAndYearString.textContent = datePicker.monthNames[pickedMonth] + ' ' + pickedYear;
+    daysContainer.innerHTML = "";
+    daysContainer.appendChild(partToRender);
+}
+
+
+
+

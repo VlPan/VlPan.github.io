@@ -1,8 +1,6 @@
 function DatePicker() {
     this.daysOfWeek = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
     this.currentDate = new Date();
-    this.pickedMonth = this.currentDate.getMonth();
-    this.pickedYear = this.currentDate.getFullYear();
     this.monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
