@@ -19,13 +19,14 @@ DatePicker.prototype.generateArrayOfDaysByMonth = function (month, year) {
 
     var firstDay = arrayOfDaysInMonth[0].getDay();
     var lastDay = arrayOfDaysInMonth[arrayOfDaysInMonth.length - 1].getDay();
-
+    console.log(firstDay);
 
     if (firstDay === 0) {
         arrOfPrevMonthDays = this.getLastDaysInMonth(validPrevMonth, year, 6);
         this.prevDays = arrOfPrevMonthDays;
     }
     else if (firstDay === 1) {
+        this.prevDays = 0;
         arrOfPrevMonthDays = [];
     }
     else {

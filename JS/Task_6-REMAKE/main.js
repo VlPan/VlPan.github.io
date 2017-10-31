@@ -1,8 +1,10 @@
-﻿var renderer = new Renderer();
+var renderer = new Renderer();
 var datePicker = new DatePicker();
-var daysObjects = datePicker.generateArrayOfDaysByMonth(datePicker.currentDate.getMonth() - 1,
+var daysObjects = datePicker.generateArrayOfDaysByMonth(datePicker.currentDate.getMonth(),
     datePicker.currentDate.getFullYear());
-
+console.log(daysObjects[10].getMonth())
+console.log(daysObjects[10].getDate())
+console.log(daysObjects[10].getFullYear())
 
 var component = renderer.create({
     tag: 'div',
@@ -83,7 +85,7 @@ var component = renderer.create({
                     }, daysObjects, 'getDate', [
                         {
                             styleClass: 'w10-calendar__day--TODAY',
-                            condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()   + '&&' + 'arrOfContext[index].getFullYear() ===' + datePicker.currentDate.getFullYear()
+                            condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth() ===' + datePicker.currentDate.getMonth()
                         },
                         {
                             styleClass: 'w10-calendar__day--not-present',
@@ -148,8 +150,8 @@ function nextMonth() {
         pickedYear++;
         pickedMonth = 0;
     }
-    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth - 1, pickedYear);
-
+    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth, pickedYear);
+    console.log(daysObjects)
     var partToRender = renderer.create( {
         tag: 'div',
         classes: 'w10-calendar__days',
@@ -159,7 +161,7 @@ function nextMonth() {
         }, daysObjects, 'getDate', [
             {
                 styleClass: 'w10-calendar__day--TODAY',
-                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()
+                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth() ===' + datePicker.currentDate.getMonth()  + '&&' + 'arrOfContext[index].getFullYear() ===' + datePicker.currentDate.getFullYear()
             },
             {
                 styleClass: 'w10-calendar__day--not-present',
@@ -174,6 +176,9 @@ function nextMonth() {
     monthAndYearString.textContent = datePicker.monthNames[pickedMonth] + ' ' + pickedYear;
     daysContainer.innerHTML = "";
     daysContainer.appendChild(partToRender);
+    console.log(daysObjects[10].getMonth())
+    console.log(daysObjects[10].getDate())
+    console.log(daysObjects[10].getFullYear())
 }
 
 function prevMonth() {
@@ -185,7 +190,7 @@ function prevMonth() {
         pickedYear--;
         pickedMonth = 11;
     }
-    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth - 1, pickedYear);
+    daysObjects = datePicker.generateArrayOfDaysByMonth(pickedMonth, pickedYear);
 
     var partToRender = renderer.create( {
         tag: 'div',
@@ -196,7 +201,7 @@ function prevMonth() {
         }, daysObjects, 'getDate', [
             {
                 styleClass: 'w10-calendar__day--TODAY',
-                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth()+1 ===' + datePicker.currentDate.getMonth()
+                condition: 'arrOfContext[index].getDate() ===' + datePicker.currentDate.getDate() + '&&' + 'arrOfContext[index].getMonth() ===' + datePicker.currentDate.getMonth()
             },
             {
                 styleClass: 'w10-calendar__day--not-present',
@@ -211,6 +216,9 @@ function prevMonth() {
     monthAndYearString.textContent = datePicker.monthNames[pickedMonth] + ' ' + pickedYear;
     daysContainer.innerHTML = "";
     daysContainer.appendChild(partToRender);
+    console.log(daysObjects[1].getMonth())
+    console.log(daysObjects[1].getDate())
+    console.log(daysObjects[1].getFullYear())
 }
 
 
