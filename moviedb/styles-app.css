@@ -1364,38 +1364,58 @@ body {
 
 .db-about__img1 {
   height: 500px;
-  background: url(assets/img/tv-shows.png) no-repeat top/contain; }
+  background: url(assets/img/0.png) no-repeat top/contain; }
 
 .db-about__img2 {
   height: 500px;
-  background: url(assets/img/movies.png) no-repeat top/contain; }
+  background: url(assets/img/1.png) no-repeat top/contain; }
 
 .db-about__img3 {
   height: 500px;
-  background: url(assets/img/myLib.png) no-repeat top/contain; }
+  background: url(assets/img/2.png) no-repeat top/contain; }
 
 .db-about__img4 {
   height: 500px;
-  background: url(assets/img/add-form.png) no-repeat top/contain; }
+  background: url(assets/img/3.png) no-repeat top/contain; }
 
 .db-about__img5 {
   height: 500px;
-  background: url(assets/img/myLib-filtered.png) no-repeat top/contain; }
+  background: url(assets/img/4.png) no-repeat top/contain; }
 
 .db-about__img6 {
   height: 500px;
-  background: url(assets/img/tv-show-desc.png) no-repeat top/contain; }
+  background: url(assets/img/5.png) no-repeat top/contain; }
 
 .db-about__img7 {
   height: 500px;
-  background: url(assets/img/movie-desc.png) no-repeat top/contain; }
+  background: url(assets/img/6.png) no-repeat top/contain; }
 
 .db-about__img8 {
   height: 500px;
-  background: url(assets/img/myLib-empty.png) no-repeat top/contain; }
+  background: url(assets/img/7.png) no-repeat top/contain; }
 
 .db-about__img9 {
   height: 500px;
-  background: url(assets/img/support.png) no-repeat top/contain; }
+  background: url(assets/img/8.png) no-repeat top/contain; }
+
+.db-about__img10 {
+  height: 500px;
+  background: url(assets/img/9.png) no-repeat top/contain; }
+
+.db-about__img11 {
+  height: 500px;
+  background: url(assets/img/10.png) no-repeat top/contain; }
+
+.db-about__img12 {
+  height: 500px;
+  background: url(assets/img/11.png) no-repeat top/contain; }
+
+.db-about__img13 {
+  height: 500px;
+  background: url(assets/img/12.png) no-repeat top/contain; }
+
+.db-about__img14 {
+  height: 500px;
+  background: url(assets/img/13.png) no-repeat top/contain; }
 
 /*# sourceMappingURL=styles-app.css.map*/
