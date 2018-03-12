@@ -262,6 +262,12 @@ button {
 
 .concreate-game__date {
   font-size: 1.6rem; }
+
+@media (max-width: 500px) {
+  .concreate-game__history-item {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid rgba(86, 67, 250, 0.4); } }
 .bw-home {
   text-align: center; }
   .bw-home__search {

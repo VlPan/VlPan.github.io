@@ -17485,6 +17485,9 @@ var ConcreateGameController = /** @class */ (function () {
         var randomColor = this.helperService.getRandomColor();
         var ctx = document.getElementById('myChart').getContext('2d');
         this.averagePoint = this.helperService.average(this.points);
+        console.log(this.points);
+        this.points = this.points.reverse().splice(-12);
+        console.log(this.points);
         var chart = new chart_js_1.Chart(ctx, {
             type: 'line',
             data: {
@@ -17493,7 +17496,7 @@ var ConcreateGameController = /** @class */ (function () {
                         label: 'Last 20 games',
                         backgroundColor: randomColor,
                         borderColor: randomColor,
-                        data: this.points.reverse(),
+                        data: this.points,
                         fill: false
                     }]
             },
@@ -17510,11 +17513,7 @@ var ConcreateGameController = /** @class */ (function () {
                 },
                 scales: {
                     yAxes: [{
-                            ticks: {
-                                max: this.averagePoint * 1.7,
-                                min: this.averagePoint / 4,
-                                stepSize: this.averagePoint / 15
-                            }
+                            ticks: {}
                         }]
                 }
             }
@@ -17522,13 +17521,13 @@ var ConcreateGameController = /** @class */ (function () {
     };
     ConcreateGameController.prototype.generateLabels = function (length) {
         var arr = [];
-        if (length < 20) {
+        if (length < 13) {
             for (var i = 0; i < length; i++) {
                 arr[i] = i + 1;
             }
         }
         else {
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < 13; i++) {
                 arr[i] = i + 1;
             }
         }
@@ -72456,7 +72455,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882131547
+      // 1520886930473
       var cssReload = require("../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72521,7 +72520,7 @@ exports.moduleName = angular.module('application.core', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882131000
+      // 1520886930042
       var cssReload = require("../../../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72615,7 +72614,7 @@ exports.moduleName = angular.module('application.contacts', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882130891
+      // 1520886929948
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85255,7 +85254,7 @@ module.exports = {
 /* 614 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\n\r\n<div class=\"concreate-game__container\">\r\n   <h1 class=\"concreate-game__name\">{{$ctrl.game.name}}</h1>\r\n\r\n<div style=\"display: inline-block; margin-bottom: 15px;\">\r\n   <a    ng-if=\"+($ctrl.$stateParams.id) - 1 > 0\"\r\n         class=\"bw-game-card__stats-btn\"\r\n         ui-sref=\"game({ id: {{+($ctrl.$stateParams.id) - 1}} })\"> Prev </a>\r\n   <a    class=\"bw-game-card__stats-btn\"\r\n         ui-sref=\"game({ id: {{+($ctrl.$stateParams.id) + 1}} })\"> Next </a>\r\n</div>\r\n\r\n\r\n\r\n   <div class=\"chart-container\" style=\"position: relative; height: 100%; width: 100%;\">\r\n      <canvas id=\"myChart\"></canvas>\r\n   </div>\r\n\r\n</div>\r\n\r\n<history-table\r\n      history=\"$ctrl.history\"\r\n      points=\"$ctrl.points\"\r\n></history-table>\r\n";
+module.exports = "\r\n\r\n\r\n<div class=\"concreate-game__container\">\r\n   <h1 class=\"concreate-game__name\">{{$ctrl.game.name}}</h1>\r\n\r\n<div style=\"display: inline-block; margin-bottom: 15px;\">\r\n   <a    ng-if=\"+($ctrl.$stateParams.id) - 1 > 0\"\r\n         class=\"bw-game-card__stats-btn\"\r\n         ui-sref=\"game({ id: {{+($ctrl.$stateParams.id) - 1}} })\"> Prev </a>\r\n   <a    class=\"bw-game-card__stats-btn\"\r\n         ui-sref=\"game({ id: {{+($ctrl.$stateParams.id) + 1}} })\"> Next </a>\r\n</div>\r\n\r\n   <div class=\"chart-container\" style=\"position: relative; height: 100%; width: 100%;\">\r\n      <canvas id=\"myChart\"></canvas>\r\n   </div>\r\n\r\n</div>\r\n\r\n<history-table\r\n      history=\"$ctrl.history\"\r\n      points=\"$ctrl.points\"\r\n></history-table>\r\n";
 
 /***/ }),
 /* 615 */
@@ -85317,7 +85316,7 @@ exports.HistoryTable = HistoryTable;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882130772
+      // 1520886929813
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85402,7 +85401,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882130804
+      // 1520886929851
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85415,7 +85414,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882130976
+      // 1520886930026
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85621,7 +85620,7 @@ exports.GameCard = GameCard;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520882130852
+      // 1520886929886
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
