@@ -72455,7 +72455,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738865
+      // 1520964004621
       var cssReload = require("../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72520,7 +72520,7 @@ exports.moduleName = angular.module('application.core', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738399
+      // 1520964004044
       var cssReload = require("../../../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72614,7 +72614,7 @@ exports.moduleName = angular.module('application.contacts', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738328
+      // 1520964003967
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85316,7 +85316,7 @@ exports.HistoryTable = HistoryTable;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738206
+      // 1520964003852
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85401,7 +85401,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738258
+      // 1520964003885
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85414,7 +85414,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738372
+      // 1520964004027
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85533,6 +85533,28 @@ var GamesService = /** @class */ (function () {
             { id: 75, name: 'Кто новый' },
             { id: 76, name: 'Больше меньше' },
             { id: 77, name: 'Найди всех' },
+            { id: 78, name: 'Формула' },
+            { id: 79, name: 'Калькулятор' },
+            { id: 80, name: 'Логицепь' },
+            { id: 81, name: 'Соедени пары' },
+            { id: 82, name: 'Раскрашенная дорожка' },
+            { id: 83, name: 'Мозайка памяти' },
+            { id: 84, name: '248' },
+            { id: 85, name: 'Ebb and flow' },
+            { id: 86, name: 'Lost in migration' },
+            { id: 87, name: 'Trouble Brewing' },
+            { id: 88, name: 'Spin Cycle' },
+            { id: 89, name: 'Calculator' },
+            { id: 90, name: 'Quick calculation' },
+            { id: 91, name: 'Math machine' },
+            { id: 92, name: 'Mathematical pairs' },
+            { id: 93, name: 'Mental airthmetic' },
+            { id: 94, name: 'Rock-paper-scissor' },
+            { id: 95, name: 'colors' },
+            { id: 96, name: 'Mental agility' },
+            { id: 97, name: 'Peripheral vision' },
+            { id: 98, name: 'grid color' },
+            { id: 99, name: 'Ropes and pulleys' },
         ];
     }
     GamesService.prototype.getGameList = function () {
@@ -85619,7 +85641,7 @@ exports.GameCard = GameCard;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520958738289
+      // 1520964003923
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
