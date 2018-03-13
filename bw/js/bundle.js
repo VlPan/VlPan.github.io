@@ -72455,7 +72455,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886930473
+      // 1520958738865
       var cssReload = require("../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72520,7 +72520,7 @@ exports.moduleName = angular.module('application.core', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886930042
+      // 1520958738399
       var cssReload = require("../../../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -72614,7 +72614,7 @@ exports.moduleName = angular.module('application.contacts', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886929948
+      // 1520958738328
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85316,7 +85316,7 @@ exports.HistoryTable = HistoryTable;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886929813
+      // 1520958738206
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85401,7 +85401,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886929851
+      // 1520958738258
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85414,7 +85414,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886930026
+      // 1520958738372
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -85533,7 +85533,6 @@ var GamesService = /** @class */ (function () {
             { id: 75, name: 'Кто новый' },
             { id: 76, name: 'Больше меньше' },
             { id: 77, name: 'Найди всех' },
-            { id: 78, name: 'Мозг - инструкция по применению. Скорочтение' },
         ];
     }
     GamesService.prototype.getGameList = function () {
@@ -85620,7 +85619,7 @@ exports.GameCard = GameCard;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1520886929886
+      // 1520958738289
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
