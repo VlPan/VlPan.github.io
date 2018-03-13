@@ -200,7 +200,6 @@ body {
   /*font-size: 16px;*/
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -223,6 +222,10 @@ button {
   padding: 5px 15px;
   width: 90%;
   margin: 0 auto; }
+
+@media (max-width: 350px) {
+  .app {
+    width: 100%; } }
 .concreate-game__average-point {
   font-size: 2rem;
   font-weight: 700; }
@@ -280,6 +283,13 @@ button {
 .bw__clear {
   cursor: pointer;
   font-size: 3rem; }
+
+@media (max-width: 400px) {
+  .bw-home__search {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-top: 1.5rem; } }
 .hw-btn,
 .hw-btn:link,
 .hw-btn:visited {
