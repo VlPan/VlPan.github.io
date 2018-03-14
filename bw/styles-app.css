@@ -271,6 +271,51 @@ button {
     width: 50%;
     padding: 1rem;
     border: 1px solid rgba(86, 67, 250, 0.4); } }
+.concreate-game__average-point {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.concreate-game__name {
+  font-weight: 700;
+  color: #2998ff;
+  font-size: 3rem;
+  text-decoration: underline; }
+
+.concreate-game__history-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+.concreate-game__history-item {
+  width: 25%;
+  padding: 1rem;
+  border: 1px solid rgba(86, 67, 250, 0.4); }
+
+.concreate-game__points {
+  font-weight: 700;
+  font-size: 2rem; }
+  .concreate-game__points--red {
+    color: #ef1f30 !important; }
+  .concreate-game__points--green {
+    color: #28b485 !important; }
+  .concreate-game__points--blue {
+    color: #2998ff; }
+
+.concreate-game__date {
+  font-size: 1.6rem; }
+
+@media (max-width: 500px) {
+  .concreate-game__history-item {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid rgba(86, 67, 250, 0.4); } }
 .bw-home {
   text-align: center; }
   .bw-home__search {
@@ -278,7 +323,13 @@ button {
     font-weight: 700;
     font-size: 2rem;
     color: #28b485;
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
+  .bw-home__title {
+    font-size: 3.5rem; }
+    .bw-home__title--red {
+      color: orangered; }
+    .bw-home__title--green {
+      color: #28b485; }
 
 .bw__clear {
   cursor: pointer;
