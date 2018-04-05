@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 7px 5px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+th {
+    font-size: 20px;
+    background-color: #e3ff89;
+}
+
+td, th{
+    text-align: center;
+    padding: 10px 15px; /* Поля в ячейках */ 
+    width: 25%;
+}
+
+.u-10 {
+    width: 10%;
+}
+
+.u-50 {
+    width: 50%;
+}
+
+.u-30 {
+    width: 30%;
+}
+
+
+.tooltip {
+    display: none;
+}
+
+td:hover + .tooltip {
+    background-color: rgba(0,0,0,.4);
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+}
+
+
+.b {
+    font-weight: 700;
+}
+
+.z {
+    background-color: #e8e8e8;
+}
+
+.r{
+    background-color: #94bcfc; 
+}
+
+.center{
+    margin-left:auto; 
+    margin-right:auto;
+}
+.container{
+    font-size: 20px;
+    text-align: center;
+    font-size: 18x;
+    width: 90%;
+    margin-left: 5%;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.plus{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: #31c451;
+    color: white;
+    margin-right: 10px;
+}
+
+.clear{
+    cursor: pointer;
+    padding: 5px;
+    background-color: #32abad;
+    color: white;
+}
+
+.counter{
+    margin-top: 10px;
+}
