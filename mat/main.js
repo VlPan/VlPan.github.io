@@ -108,12 +108,15 @@ var app = angular.module('heroApp', []).controller('MainCtrl', function MainCtrl
 
     $scope.sumQov = function(q_ov){
         $scope.sum_q_ov += q_ov;
+        $scope.q_ov = undefined;
     }
     $scope.sumQt = function(q_t){
         $scope.sum_q_t += q_t;
+        $scope.q_t = undefined;
     }
     $scope.sumGi = function(g_i){
         $scope.sum_g_i += g_i;
+        $scope.g_i = undefined;
     }
     $scope.clearSumQov = function(){
         $scope.sum_q_ov = 0;
