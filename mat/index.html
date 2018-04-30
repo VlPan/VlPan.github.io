@@ -51,7 +51,7 @@
                   <tr class="r">
                         <td>Cуммарная производительность отопительно-производственной котельной</td>
                         <td>Q</td>
-                        <td>Q<sub>ов</sub> + Q<sub>т</sub></td>
+                        <td>Q<sub>ов</sub> - Q<sub>т</sub></td>
                         <td class="b">{{calcQ(sum_q_ov, sum_q_t)}}</td>
                   </tr>
                   <tr class="z">
@@ -117,7 +117,7 @@
                   <tr class="r">
                         <td>Pасход пара из расширителя</td>
                         <td>G<sub>пр</sub></td>
-                        <td></td>
+                        <td>P <sub>пр</sub>(&#8721 D / 100)</td>
                         <td  class="b">{{calcGpr(p_pr)}}</td>
                   </tr>
                   <tr class="z">
@@ -130,13 +130,17 @@
                         <td>Энтальпия котловой воды при добавлении в расширителе</td>
                         <td>i'<sub>2</sub></td>
                         <td></td>
-                        <td><input placeholder="Введите значение" type="number" ng-model="i2"></td>
+                        <td><div ng-repeat="str in i2_string track by $index">
+                              {{str}}
+                        </div> </td>
                   </tr>
                   <tr class="z">
                         <td>Энтальпия пара при добавлении в расширителе</td>
                         <td>i''<sub>н</sub></td>
                         <td></td>
-                        <td><input placeholder="Введите значение" type="number" ng-model="i_n"></td>
+                        <td><div ng-repeat="str in i_n_string track by $index">
+                              {{str}}
+                        </div> </td>
                   </tr>
                   <tr class="z">
                         <td>Доля рециркулирующих газов</td>
@@ -152,13 +156,21 @@
                               &#215μ<sub>под</sub>
                               )
                         </td>
-                        <td  class="b">{{calcDpr(i1, i2, i_n, u_pod)}}</td>
+                        <td  class="b">
+                              <div ng-repeat="n in calcDpr(i1, i2, i_n, u_pod) track by $index">
+                                    {{n}}
+                              </div>
+                        </td>
                   </tr>
                   <tr class="r">
-                        <td>??</td>
+                        <td>Количество пара, выходящего из расширителя</td>
                         <td>G'<sub>пр</sub></td>
                         <td>D<sub>пр</sub> + G<sub>пр</sub></td>
-                        <td  class="b">{{caclGTouchPr()}}</td>
+                        <td  class="b">
+                              <div ng-repeat="n in caclGTouchPr() track by $index">
+                                    {{n}}
+                              </div>
+                        </td>
                   </tr>
                   <tr class="z">
                         <td>Расход пара на продувку</td>
@@ -242,6 +254,7 @@
                         <td>
                               
                         </td>
+                        
                         <td><input placeholder="Введите значение" type="number" ng-model="i_ll"></td>
                   </tr>
                   <tr class="z">
@@ -250,7 +263,10 @@
                         <td>
                               
                         </td>
-                        <td><input placeholder="Введите значение" type="number" ng-model="i_k"></td>
+                        <td><div ng-repeat="str in i_k_string track by $index">
+                              {{str}}
+                        </div> </td>
+                        <!-- <td><input placeholder="Введите значение" type="number" ng-model="i_k"></td> -->
                   </tr>
                   <tr class="r">
                         <td>Количество пара, расходуемого в теплообменнике сырой воды</td>
@@ -259,16 +275,23 @@
                               ( G<sub>св</sub> ⋅ ( t''<sub>св</sub> - t'<sub>св</sub> ) ) / 
                               ( ( i'' - i <sub>к</sub>) ⋅ μ<sub>под</sub> ) 
                         </td>
-                        <td  class="b">{{calcDSv(t_ll_sv, t_l_sv, i_ll, i_k, u_pod)}}</td>
+                        <td  class="b">
+                              <div ng-repeat="n in calcDSv(t_ll_sv, t_l_sv, i_ll, i_k, u_pod) track by $index">
+                                    {{n}}
+                              </div>
+                        </td>
                   </tr>
 
                   <tr class="z">
                         <td>Энтальпия выпарки</td>
-                        <td>t'' <sub>вып</sub></td>
+                        <td>i'' <sub>вып</sub></td>
                         <td>
                              
                         </td>
-                        <td><input placeholder="Введите значение" type="number" ng-model="i_ll_vip"></td>
+                        <!-- <td><input placeholder="Введите значение" type="number" ng-model="i_ll_vip"></td> -->
+                        <td><div ng-repeat="str in i_ll_vip_string track by $index">
+                              {{str}}
+                        </div> </td>
                   </tr>
 
                   <tr class="r">
@@ -278,7 +301,10 @@
                               t''<sub>с.в</sub> + ( ( D<sub>вып</sub> ⋅ ( i''<sub>вып</sub> - 
                               i<sub>к</sub> ) / ( G<sub>хво</sub> ⋅ μ <sub>под</sub> ) )
                         </td>
-                        <td  class="b">{{calcTlllsv(t_ll_sv, i_ll_vip, i_k, u_pod)}}</td>
+                       
+                        <td class="b"><div ng-repeat="n in calcTlllsv(t_ll_sv, i_ll_vip, i_k, u_pod) track by $index">
+                              {{n}}
+                        </div> </td>
                   </tr>
 
                   <tr class="z">
@@ -340,14 +366,29 @@
                               ( G<sub>д</sub> ⋅ i'<sub>д</sub> + D <sub>вып</sub> ⋅ t''<sub>вып</sub> ) / 
                               i''<sub>д</sub>  - ( ΣG <sub>i</sub> + D <sub>пр</sub> ⋅ i''<sub>к</sub> ) / i''<sub>д</sub>
                         </td>
-                        <td  class="b">{{calcDD2(i_l_d, t_ll_vip, i_ll_d, sum_g_i, i_ll_k, i_ll_d)}}</td>
+                        
+                        <td  class="b">
+                              <div ng-repeat="n in calcDD2(i_l_d, t_ll_vip, i_ll_d, sum_g_i, i_ll_k, i_ll_d) track by $index">
+                                    {{n}}
+                              </div>
+                        </td>
                   </tr>
       
             </table>
             
       </div>
-     
+
+      <div style="text-align: center; margin-top: 20px;">
+            <button class="btn-to-draw" ng-click="drawGraph()">Нарисовать график</button>
+      </div>
+      <div class="chart-container" style="position: relative; height:40vh; width:80vw; margin-left: 10vw;">
+            <canvas id="chart"></canvas>
+        </div>
+
 </div>
-<script src="main.js"></script>
+<script src="chart.min.js"></script>
+<script src="bundle.js"></script>
+
+
 </body>
 </html>
