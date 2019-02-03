@@ -75495,7 +75495,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556484
+      // 1549195263260
       var cssReload = require("../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -75560,7 +75560,7 @@ exports.moduleName = angular.module('application.core', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556498
+      // 1549195262933
       var cssReload = require("../../../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -75656,7 +75656,7 @@ exports.moduleName = angular.module('application.contacts', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556536
+      // 1549195262963
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86124,7 +86124,7 @@ exports.routing = ["$stateProvider", function ($stateProvider) {
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556148
+      // 1549195262876
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86178,7 +86178,7 @@ exports.HistoryTable = HistoryTable;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556045
+      // 1549195262777
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86265,7 +86265,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556122
+      // 1549195262851
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86278,7 +86278,7 @@ exports.moduleName = angular.module('application.signin', [
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556187
+      // 1549195262921
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86289,7 +86289,7 @@ exports.moduleName = angular.module('application.signin', [
 /* 632 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"bw-home\">\r\n<input type=\"text\"\r\n       ng-model=\"$ctrl.gamesService.whatToSearch\"\r\n       class=\"bw-home__search\"\r\n       id=\"elementID\"\r\n>\r\n   <h1 class=\"bw-home__title\"\r\n       ng-click=\"$ctrl.gamesService.trainMode = !$ctrl.gamesService.trainMode\"\r\n       ng-class=\"{\r\n       'bw-home__title--red': $ctrl.gamesService.trainMode,\r\n       'bw-home__title--green': !$ctrl.gamesService.trainMode\r\n       }\"\r\n\r\n   >{{$ctrl.gamesService.trainMode ?  'Train Mode' : 'Game mode'}}\r\n\r\n   </h1>\r\n\r\n   <button ng-if=\"$ctrl.gamesService.trainMode\" ng-click=\"$ctrl.showTrainForm = !$ctrl.showTrainForm\">add Train</button>\r\n   <div ng-if=\"$ctrl.showTrainForm && $ctrl.gamesService.trainMode\">\r\n         <form ng-submit=\"$ctrl.addTrain()\">\r\n            <input type=\"text\" ng-model=\"$ctrl.trainToAdd\">\r\n         </form>\r\n   </div>\r\n   <button ng-if=\"!$ctrl.gamesService.trainMode\" ng-click=\"$ctrl.showGameForm = !$ctrl.showGameForm\">add Game</button>\r\n   <div ng-if=\"$ctrl.showGameForm && !$ctrl.gamesService.trainMode\">\r\n         <form ng-submit=\"$ctrl.addGame()\">\r\n            <input type=\"text\" ng-model=\"$ctrl.gameToAdd\">\r\n         </form>\r\n   </div>\r\n\r\n\r\n   <div ng-if=\"!$ctrl.gamesService.trainMode\" ng-repeat=\"game in $ctrl.gameList  | filter:$ctrl.gamesService.whatToSearch\">\r\n      <game-card game=\"game\" deleted=\"$ctrl.deleteGame(id)\"></game-card>\r\n   </div>\r\n\r\n   <div ng-if=\"$ctrl.gamesService.trainMode\" ng-repeat=\"game in $ctrl.trainList  | filter:$ctrl.gamesService.whatToSearch\">\r\n      <game-card game=\"game\" isTrain=\"$ctrl.trainMode\" deleted=\"$ctrl.deleteTrain(id)\"></game-card>\r\n   </div>\r\n</div>\r\n";
+module.exports = "\r\n<div class=\"bw-home\">\r\n<input type=\"text\"\r\n       ng-model=\"$ctrl.gamesService.whatToSearch\"\r\n       class=\"bw-home__search\"\r\n       id=\"elementID\"\r\n>\r\n   <h1 class=\"bw-home__title\"\r\n       ng-click=\"$ctrl.gamesService.trainMode = !$ctrl.gamesService.trainMode\"\r\n       ng-class=\"{\r\n       'bw-home__title--red': $ctrl.gamesService.trainMode,\r\n       'bw-home__title--green': !$ctrl.gamesService.trainMode\r\n       }\"\r\n\r\n   >{{$ctrl.gamesService.trainMode ?  'Train Mode' : 'Game mode'}}\r\n\r\n   </h1>\r\n\r\n   <button ng-if=\"$ctrl.gamesService.trainMode\" ng-click=\"$ctrl.showTrainForm = !$ctrl.showTrainForm\">add Train</button>\r\n   <div ng-if=\"$ctrl.showTrainForm && $ctrl.gamesService.trainMode\">\r\n         <form ng-submit=\"$ctrl.addTrain()\">\r\n            <input type=\"text\" ng-model=\"$ctrl.trainToAdd\">\r\n         </form>\r\n   </div>\r\n   <button ng-if=\"!$ctrl.gamesService.trainMode\" ng-click=\"$ctrl.showGameForm = !$ctrl.showGameForm\">add Game</button>\r\n   <div ng-if=\"$ctrl.showGameForm && !$ctrl.gamesService.trainMode\">\r\n         <form ng-submit=\"$ctrl.addGame()\">\r\n            <input type=\"text\" ng-model=\"$ctrl.gameToAdd\">\r\n         </form>\r\n   </div>\r\n\r\n\r\n   <div ng-if=\"!$ctrl.gamesService.trainMode\" ng-repeat=\"game in $ctrl.gameList | filter:$ctrl.gamesService.whatToSearch track by game.id  \">\r\n      <game-card game=\"game\" deleted=\"$ctrl.deleteGame(id)\"></game-card>\r\n   </div>\r\n\r\n   <div ng-if=\"$ctrl.gamesService.trainMode\" ng-repeat=\"game in $ctrl.trainList | filter:$ctrl.gamesService.whatToSearch track by game.id  \">\r\n      <game-card game=\"game\" isTrain=\"$ctrl.trainMode\" deleted=\"$ctrl.deleteTrain(id)\"></game-card>\r\n   </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 633 */
@@ -86472,7 +86472,7 @@ exports.GameCard = GameCard;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556097
+      // 1549195262826
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -86580,7 +86580,7 @@ exports.DsTooltip = DsTooltip;
 
 // removed by extract-text-webpack-plugin
     if(false) {
-      // 1549192556073
+      // 1549195262801
       var cssReload = require("../../../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
