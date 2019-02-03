@@ -476,11 +476,20 @@ button {
   .bw-game-card__ok-btn:disabled {
     color: #777; }
   .bw-game-card__ok-btn {
+    position: relative;
     background-color: transparent;
-    margin-right: 2rem;
+    margin-right: .5rem;
     padding: 1rem;
     color: #7ed56f; }
     .bw-game-card__ok-btn .fa {
+      font-size: 3rem; }
+  .bw-game-card__delete-btn {
+    position: relative;
+    background-color: transparent;
+    margin-right: 2rem;
+    padding: 1rem;
+    color: #e7423c; }
+    .bw-game-card__delete-btn .fa {
       font-size: 3rem; }
   .bw-game-card__stats-btn {
     display: inline-block;
@@ -494,5 +503,30 @@ button {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
+ds-tooltip {
+  position: absolute;
+  min-width: 100px;
+  font-size: inherit;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  z-index: 100; }
+  ds-tooltip .ds-tooltip__shadow-container {
+    display: inline-block;
+    position: relative;
+    padding: 3px 5px;
+    color: white;
+    border-radius: 10px;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.4) !important;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+    ds-tooltip .ds-tooltip__shadow-container--visible {
+      visibility: visible;
+      opacity: 1; }
 
 /*# sourceMappingURL=styles-app.css.map*/
